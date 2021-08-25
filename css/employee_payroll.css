@@ -81,3 +81,10 @@ body, html{
     /*align-content: space-between;*/
     width: 100px;
 }
+.radio_row{
+    display: flex;
+    flex-direction: row;
+    /*height: 50%;*/
+    width: 50%;
+    align-items: center;
+}
