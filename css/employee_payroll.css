@@ -63,3 +63,21 @@ body, html{
     font-family: Roboto;
     font-size: 28px;
 }
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;  
+   
+}
+.row_left{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 12em; 
+}
+.row_right{
+    display: flex;
+    flex-direction: column;
+    flex: calc(100% - 12em);
+    /*align-content: space-between;*/
+    width: 100px;
+}
