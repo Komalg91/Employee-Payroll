@@ -49,6 +49,42 @@
                             <div class="radio_row"><input type="radio" value="../assets/Ellipse -4.png" name="profile"><img src="../assets/Ellipse -4.png"></div> 
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="row_left"><label for="name_text">Gender</label></div>
+                        <div class="row_right radio_gender_right">
+                            <div class="radio_row radio_gender"><input type="radio" value="Female" name="gender">Female</div>                 
+                            <div class="radio_row radio_gender"><input type="radio" value="Male" name="gender">Male</div> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row_left"> <label for="name_text">Department</label></div>
+                        <div class="row_right">
+                            <div class="radio_row"><input type="checkbox" value="HR" name="dept">HR</div> 
+                        </div>
+                        <div class="row_right">
+                            <div class="radio_row"><input type="checkbox" value="Sales" name="dept">Sales</div> 
+                        </div>
+                        <div class="row_right">
+                            <div class="radio_row"><input type="checkbox" value="Finance" name="dept">Finance</div> 
+                        </div>
+                        <div class="row_right">
+                            <div class="radio_row"><input type="checkbox" value="Engineer" name="dept">Engineer</div> 
+                        </div>
+                        <div class="row_right">
+                            <div class="radio_row"><input type="checkbox" value="Others" name="dept">Others</div> 
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <div class="row_left"> <label for="name_text">Salary</label></div>
+                        <div class="row_right row_salary"><input type="range" min="1" max="400000" value="200000" class="slider" id="myRange">
+                        <p id='output'> </p>
+                        <script>
+                            document.getElementById("myRange").addEventListener('input', function() {
+                                output.textContent = "Salary: " +this.value;
+                            });
+                        </script>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>

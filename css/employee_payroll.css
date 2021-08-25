@@ -88,3 +88,9 @@ body, html{
     width: 50%;
     align-items: center;
 }
+.radio_gender_right{
+    flex-direction: row;
+}
+.radio_gender{
+    width: 25%;
+}
