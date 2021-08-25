@@ -94,3 +94,25 @@ body, html{
 .radio_gender{
     width: 25%;
 }
+.date_container{
+    display: flex;
+    flex-direction: row;  
+}
+.day_box{
+    display: flex;
+}
+.month_box{
+    display: flex;
+    margin-left: 2%;
+}
+.year_box{
+    margin-left: 2%;
+}
+#day, #month, #year{
+    padding: 15px;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
+    background: #FFFFFF;
+    font-size: 18px;
+    color: #42515F;
+}
