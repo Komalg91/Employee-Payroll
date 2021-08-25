@@ -1,0 +1,65 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+.container{
+    
+    height: 100%;
+}
+.header_container{
+    background-color: #fff;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /*margin-left: 8%;*/
+    justify-content: space-between;
+    align-content: space-between;
+}
+.header_content{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.brand_name{
+    display: flex;
+    flex-direction: column;
+}
+.brand_text1{
+    color: #82A70C;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.brand_text2{
+    color: #42515F;
+}
+.container_color{
+    background-color: #F7F7F7;
+    padding-top: 1%;
+}
+.main_container{
+    
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #F5F5F5;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-size: 18px;
+    color: #42515F;
+    width: 65%;  
+    padding: 2% 6%;
+    margin: 1% auto;
+    /*margin-top: 1%;
+    display: flex;
+    justify-content: flex-start;*/
+}
+.form_heading{
+    color: #42515F;
+    font-family: Roboto;
+    font-size: 28px;
+}
