@@ -116,3 +116,13 @@ body, html{
     font-size: 18px;
     color: #42515F;
 }
+.textarea_row{
+    border: 10px #BDBDBD;
+    border-radius: 3px;
+}
+.row_btn{
+    display: flex;
+    margin-bottom: 2%;
+    flex-direction: row;
+    justify-content: space-between;
+}
