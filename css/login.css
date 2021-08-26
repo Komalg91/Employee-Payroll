@@ -29,28 +29,75 @@ body,html{
     text-transform: uppercase;
     font-family: sans-serif;
 }
+.main_container{
+    background-color: #F7F7F7;
+    padding-top: 1%;
+}
 .header_content1{
     display: flex;
-    flex-direction: row;
-    font-weight: 600;
-    
-    text-transform: uppercase;
-    font-family: sans-serif;
+    width: 80%;
+    margin-left: 8%;
     justify-content: space-between;
     align-content: space-between;
+    padding: 1%;
 }
-/*.left_contents{
+.left_contents{
     display: flex;
+    flex: 100%;
 }
 .right_contents{
     display: flex;
-    margin-left:100% ;
     
-}*/
+     
+}
 .brand_name{
     display: flex;
     flex-direction: column;
 }
 .brand_text1{
     color: #82A70C;
+}
+.brand_text2{
+    color: #42515F;
+}
+.brand_text3{
+    font-size: 28px;
+    color: #42515F;
+    text-transform: capitalize;
+    font-family: Roboto;
+}
+.header_content img{
+    width: 100%;
+    height: 100%;
+}
+.add_user_btn{
+    background: #82A70C 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    width: 215px;
+    height: 55px;
+    border: none;
+    margin-left: 4%;
+}
+.search_btn{
+    width: 77px;
+    height: 55px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000029;
+    border-radius: 28px;
+    opacity: 1;
+    border: none;
+    
+
+}
+.left_contents{
+    display: flex;
+}
+.right_contents{
+    display: flex;
+    
+    
 }
