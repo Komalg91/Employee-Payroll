@@ -99,7 +99,7 @@ body,html{
 .right_contents{
     display: flex;
 }
-table, .table_container{
+table{
     min-width: 80%;
     margin: 2% auto;
     justify-content: center;
