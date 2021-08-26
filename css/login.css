@@ -98,6 +98,22 @@ body,html{
 }
 .right_contents{
     display: flex;
-    
-    
+}
+.table_content{
+    min-width: 80%;
+    margin: 2% auto;
+    justify-content: center;
+    border-collapse: collapse;
+    border-radius: 3px 3px 0px 0px;
+}
+th{
+    background: #42515F 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 2% 2%;
+}
+td{
+    background-color: #FFFFFF;
+    border: 1px solid #E3E3E3;
+    text-align: center;
+    padding: 1%;
 }
