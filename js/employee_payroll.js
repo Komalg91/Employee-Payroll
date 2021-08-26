@@ -92,7 +92,7 @@ const populate = () => {
             check_username(username);
             /*textError.textContent = "";*/
             
-            /*newData.id = createNewEmployeeId();*/
+            newData.id = createNewEmployeeId();
             let start = new Array();  
             start.push(document.getElementById('day').value);
             start.push(document.getElementById('month').value);
@@ -114,3 +114,17 @@ const populate = () => {
             console.log(exception);
         } 
 }
+
+function createNewEmployeeId() {
+    let empList = getEmpDataFromLocalStorage();
+    let randID = 1;
+    for (var emp in empList) {
+        randID = Math.floor(Math.random() * 1000) + 1;
+        if (emp.id == randID) continue;
+    }
+    return randID;
+  }
+  function getEmpDataFromLocalStorage() {
+    return localStorage.getItem("EmpPayrollList") ?
+        JSON.parse(localStorage.getItem("EmpPayrollList")) : [];
+  }
