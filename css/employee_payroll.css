@@ -84,21 +84,24 @@ body, html{
 
 /************* validation ******************/
 
-.row_right_name.error input {
+.row_right.error input {
     border-color: red;    
 }
 
-.row_right_name output{
+.row_right output{
     position: absolute;
     bottom: 0;
     left: 0;
     visibility: hidden;
 }
-.row_right_name.error output{
+.row_right.error output{
     visibility: visible;
 }
-.row_right_name.success input{
+.row_right.success input{
     border-color: green;
+}
+output_error{
+    color: red;
 }
 
 /************* validation ******************/
