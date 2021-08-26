@@ -74,13 +74,36 @@ body, html{
     flex-direction: column;
     flex: 0 0 12em; 
 }
-.row_right{
+.row_right , .row_right_name{
     display: flex;
     flex-direction: column;
     flex: calc(100% - 12em);
     /*align-content: space-between;*/
     width: 100px;
 }
+
+/************* validation ******************/
+
+.row_right_name.error input {
+    border-color: red;    
+}
+
+.row_right_name output{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.row_right_name.error output{
+    visibility: visible;
+}
+.row_right_name.success input{
+    border-color: green;
+}
+
+/************* validation ******************/
+
+
 .radio_row{
     display: flex;
     flex-direction: row;
@@ -142,6 +165,164 @@ body, html{
  }
  #reset_btn{
      display: flex;
-     align-items: flex-end;
-     
+     align-items: flex-end; 
  }
+ @media screen and (max-width: 900px) {
+    .row{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2%;
+        
+    }
+    .row_left{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 10em;
+       
+    }
+    .row_right , .row_right_name{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        flex: calc(100% - 12em);
+        align-content: flex-start;
+      
+    }
+    .radio_gender_right{
+        flex-direction: row;
+    }
+    
+    .radio_row{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+    }
+    .main_container{
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    .month_box{
+        display: flex;
+        margin-left: 5%;
+    }
+    .year_box{
+        margin-left: 10%;
+    }
+    #day, #month, #year{
+        padding: 5%;
+        
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .row{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2%;
+        
+    }
+    .row_left{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 7em;
+        
+    }
+    .row_right , .row_right_name{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        flex: calc(100% - 20em);
+        align-content: flex-start;
+        width: 70px;
+  
+    }
+    .radio_row{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        font-size: 12px;
+    }
+    .main_container{
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    .month_box{
+        display: flex;
+        margin-left: 5%;
+    }
+    .year_box{
+        margin-left: 10%;
+    }
+    #day, #month, #year{
+        padding: 5%;
+        
+        font-size: 11px;
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .row_left{
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 0;
+    }
+    .row_right , .row_right_name{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+        flex: calc(100% - 20em);
+        align-content: space-between;
+    }
+   
+    .row{
+        margin-bottom: 15%;
+        display: flex;
+        flex-direction: column;
+        
+       
+    }
+    .radio_gender_right{
+        display: flex;
+        flex-direction: column;
+    }
+    .radio_row{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3%;
+        font-size: 16px;
+        
+    }
+    .radio_row img{
+        height: 100%;
+        width: 100%;
+    }
+    .main_container{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    .month_box{
+        display: flex;
+        margin-left: 5%;
+    }
+    .year_box{
+        margin-left: 10%;
+    }
+    #day, #month, #year{
+        padding: 5%;
+        font-size: 11px;
+    }
+    #submit_btn{
+        margin-left: 0%;
+         
+     }
+     .textarea_row{
+         width: 80%;
+     }
+     #reset_btn, #submit_btn, #cancel_btn{
+        font-size: 15px;     
+    }
+}
