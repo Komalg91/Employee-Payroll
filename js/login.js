@@ -3,30 +3,11 @@ window.addEventListener("DOMContentLoaded",(e) => {
 });
 
 const createEmpPayrollJson = () => {
-    let EmpPayrollList = [
-        {
-            name: 'abcd',
-            gender: 'female',
-            dept: 'engineer',
-            salary: '10000',
-            startDate: '1-1-2016',
-            note:'',
-            profile: '../assets/Ellipse -4.png'
-        },
-        {
-            name: 'efgh',
-            gender: 'male',
-            dept: 'sales',
-            salary: '10000',
-            startDate: '2-1-2016',
-            note:'',
-            profile: '../assets/Ellipse -2.png'
-        }
-
-    ];
-    //localStorage.setItem("EmpPayrollList", JSON.stringify(EmpPayrollList));
-    return EmpPayrollList;
+    let EmpPayrollList = [       ];
+    localStorage.setItem("EmpPayrollList", JSON.stringify(EmpPayrollList));
+    //return EmpPayrollList;
 }
+
 
 function createInnerHTML(){
     const headerHTML = 
@@ -40,8 +21,8 @@ function createInnerHTML(){
     "<th>Actions</th>";
 
     let innerHTML = `${headerHTML}`;
-    let empDataArray = createEmpPayrollJson();
-    //let empDataArray = JSON.parse(localStorage.getItem("EmpPayrollList"));
+    //let empDataArray = createEmpPayrollJson();
+    let empDataArray = JSON.parse(localStorage.getItem("EmpPayrollList"));
     
 
     for(let empData = 0; empData < empDataArray.length; empData++){
@@ -53,7 +34,7 @@ function createInnerHTML(){
             <td>${empDataArray[empData].gender}</td>
             <td class='table_dept'>${empDataArray[empData].dept}</td>
             <td>${empDataArray[empData].salary}</td>
-            <td>1-1-2016</td>
+            <td>${empDataArray[empData].datee}</td>
             <td>
             <button type="submit" id="${empDataArray[empData].id}" onclick="delete_entry(this)"><i class="fa fa-trash"></i></button>
             <button type="submit"  id="${empDataArray[empData].id}" onclick= "update_entry(this)"><i class="fa fa-edit"></i></button></td>
@@ -63,7 +44,6 @@ function createInnerHTML(){
 document.querySelector('#table').innerHTML = innerHTML;
 
 }
-
 
 
 

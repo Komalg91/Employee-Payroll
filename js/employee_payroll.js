@@ -71,8 +71,8 @@ function createAndUpdateStorage(newData){
       EmpPayrollList = [newData];
     }   
     
-    /*localStorage.setItem("EmpPayrollList", JSON.stringify(EmpPayrollList));
-    window.location.href = "http://127.0.0.1:5500/pages/login.html"*/
+    localStorage.setItem("EmpPayrollList", JSON.stringify(EmpPayrollList));
+    window.location.href = "http://127.0.0.1:5500/pages/login.html"
     
   }
   
