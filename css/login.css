@@ -1,0 +1,56 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+.container{
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+}    
+.container_new{
+    background-color: #FFFFFF;
+}
+.header_container{
+    display: flex;
+    width: 80%;
+    margin-left: 8%;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 1%;
+}
+.header_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.header_content1{
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    
+    text-transform: uppercase;
+    font-family: sans-serif;
+    justify-content: space-between;
+    align-content: space-between;
+}
+/*.left_contents{
+    display: flex;
+}
+.right_contents{
+    display: flex;
+    margin-left:100% ;
+    
+}*/
+.brand_name{
+    display: flex;
+    flex-direction: column;
+}
+.brand_text1{
+    color: #82A70C;
+}
