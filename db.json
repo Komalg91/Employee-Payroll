@@ -1,0 +1,153 @@
+{
+  "emp": [
+    {
+      "datee": "10-08-2021",
+      "name": "Oggy",
+      "profile": "../assets/Ellipse -2.png",
+      "gender": "Male",
+      "dept": [
+        "<div class='table_dept'>HR</div>",
+        "<div class='table_dept'>Sales</div>",
+        "<div class='table_dept'>Finance</div>"
+      ],
+      "salary": "315423",
+      "id": 32
+    },
+    {
+      "datee": "01-01-1940",
+      "name": "Neha",
+      "profile": "../assets/Ellipse 1.png",
+      "gender": "Female",
+      "dept": [
+        "<div class='table_dept'>HR</div>",
+        "<div class='table_dept'>Sales</div>"
+      ],
+      "salary": "200000",
+      "id": 36
+    },
+    {
+      "datee": "01-01-1940",
+      "name": "Apurva",
+      "profile": "../assets/Ellipse 1.png",
+      "gender": "Female",
+      "dept": [
+        "<div class='table_dept'>HR</div>",
+        "<div class='table_dept'>Sales</div>"
+      ],
+      "salary": "200000",
+      "id": 38
+    },
+    {
+      "datee": "01-01-1940",
+      "name": "Cock",
+      "profile": "../assets/Ellipse -3.png",
+      "gender": "Male",
+      "dept": [
+        "<div class='table_dept'>Engineer</div>"
+      ],
+      "salary": "200000",
+      "id": 39
+    },
+    {
+      "datee": "01-01-1940",
+      "name": "Acbdf",
+      "profile": "../assets/Ellipse 1.png",
+      "gender": "Female",
+      "dept": [
+        "<div class='table_dept'>Finance</div>"
+      ],
+      "salary": "200000",
+      "id": 41
+    },
+    {
+      "datee": "01-01-1940",
+      "name": "Komal",
+      "profile": "../assets/Ellipse -2.png",
+      "gender": "Male",
+      "dept": [
+        "<div class='table_dept'>Others</div>"
+      ],
+      "salary": "200000",
+      "id": 43
+    },
+    {
+      "datee": "01-01-1940",
+      "name": "Five",
+      "profile": "../assets/Ellipse 1.png",
+      "gender": "Male",
+      "dept": [
+        "<div class='table_dept'>HR</div>"
+      ],
+      "salary": "200000",
+      "id": 44
+    },
+    {
+      "datee": "01-01-1940",
+      "name": "Riya",
+      "profile": "../assets/Ellipse 1.png",
+      "gender": "Female",
+      "dept": [
+        "<div class='table_dept'>HR</div>"
+      ],
+      "salary": "200000",
+      "id": 46
+    },
+    {
+      "datee": "01-01-1940",
+      "name": "Pashya",
+      "profile": "../assets/Ellipse -3.png",
+      "gender": "Male",
+      "dept": [
+        "<div class='table_dept'>HR</div>"
+      ],
+      "salary": "200000",
+      "id": 47
+    },
+    {
+      "datee": "01-01-1940",
+      "name": "Seema",
+      "profile": "../assets/Ellipse 1.png",
+      "gender": "Female",
+      "dept": [
+        "<div class='table_dept'>HR</div>"
+      ],
+      "salary": "200000",
+      "id": 49
+    }
+  ],
+  "login_user": [
+    {
+      "id": 1,
+      "mobile": 9876543210,
+      "pswd": "abcd",
+      "token": false
+    },
+    {
+      "id": 2,
+      "mobile": "9632587410",
+      "pswd": "pqrs",
+      "token": false
+    },
+    {
+      "mobile": "9786054321",
+      "pswd": "Pqrs#12345",
+      "mail": "abcd@mail.com",
+      "id": 3,
+      "token": false
+    },
+    {
+      "id": 4,
+      "mobile": "7894561230",
+      "pswd": "PQrs@123",
+      "mail": "pqrs@mail.com",
+      "token": false
+    },
+    {
+      "id": 5,
+      "mobile": "7788445511",
+      "pswd": "Noddy@123",
+      "mail": "noddy@mail.com",
+      "token": true
+    }
+  ]
+}

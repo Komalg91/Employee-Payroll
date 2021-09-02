@@ -105,7 +105,9 @@ input{
     text-transform: none;
     font-weight: 600;
     letter-spacing: 0.7px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    
+    
 }
 
 .form_control.error small{
@@ -134,7 +136,9 @@ input{
     text-transform: uppercase;
     color: #42515F;
 }  
-
+h1{
+    margin: 1%;
+}
 @media screen and (max-width: 700px){
     h1{
         font-size: 1.8em;

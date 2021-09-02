@@ -58,6 +58,7 @@ body, html{
     display: flex;
     justify-content: flex-start;*/
 }
+
 .form_heading{
     color: #42515F;
     font-family: Roboto;
@@ -89,10 +90,13 @@ body, html{
 }
 
 .row_right output{
+    font-style: italic;
+    color: red;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .row_right.error output{
     visibility: visible;
@@ -100,9 +104,7 @@ body, html{
 .row_right.success input{
     border-color: green;
 }
-output_error{
-    color: red;
-}
+
 
 /************* validation ******************/
 
@@ -170,6 +172,17 @@ output_error{
      display: flex;
      align-items: flex-end; 
  }
+ .table_dept{
+    /*border: 3px solid #1fa340;    */
+    background-color: #e9fea5;
+    border-radius: 40%;
+    width: fit-content;
+    padding: 2%;
+    display: inline-block;
+    margin-left: 1%;
+  
+
+}
  @media screen and (max-width: 900px) {
     .row{
         display: flex;

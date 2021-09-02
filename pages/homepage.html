@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="/css/homepage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body onload="check_Token">
+<div class="loader">
+    <div class="loader1"></div>
+    <div class="loader2"></div>
+    <!-- <div></div>
+    <div></div> -->
+</div>
+    <div class="container">
+        <div class="header_container">
+            <div class="header_content">
+                <img src="../assets/logo.png" alt="Logo">
+                <div class="brand_name">
+                    <span class="brand_text1">Employee</span>
+                    <span class="brand_text1 brand_text2">Payroll</span>
+                </div>
+                
+                
+                <button type="submit" class="button_logout" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <div class="main_container">
+            
+                <div class="header_content1">
+                    <div class="left_contents">
+                        <span class="brand_text3">
+                            Employee Details
+                        </span>
+                        <span class="brand_text4"></span>
+                    </div>
+                    <div class="right_contents">
+                        <input type="text" id="filter_text" placeholder="Filter" class="hide">
+                        <button type="submit" class="search_btn" id="filter_btn" onclick="search_table()"><i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                        <button type="submit" class="add_user_btn" onclick="window.location.href = 'http://127.0.0.1:5500/pages/employee_payroll.html';">+ Add User</button>
+                    </div>
+                </div>
+                <div class="expanded_text">
+                    <div class="user_details"></div>
+                    <div class="user_details_expand"></div>
+                </div>
+                <div class="table_container">
+                    <table id="table"></table>
+                </div>
+               
+                    
+                
+        </div>
+            
+    </div>
+   
+   
+    <script src="/js/http_service.js"></script>
+    <script src="/js/http_service2.js"></script>
+    <script src="/js/site_properties.js"></script>
+    <script src="/js/homepage.js"></script>
+    <script src="/js/employee_payroll.js"></script>
+    <script src="/js/login.js"></script>
+    
+   <script type="text/javascript">
+   setTimeout(function(){
+       $('.loader').fadeOut();
+   },3000);
+   </script>
+</body>
+</html>
+
+

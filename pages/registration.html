@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/css/registration.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container_color">
+            <div class="main_container">
+                <div class="container_new">
+                    <div class="header_container1">
+                        <h1>Registration Form</h1>
+                    </div>
+                    <div class="header_content1">
+                        <div class="form_control">
+                            <label for="email_register">Email</label>
+                            <input type="text" placeholder="Email" value="" id="email_register">
+                            <small></small>
+                        </div>
+                        <div class="form_control">
+                            <label for="mobile_register">Mobile Number</label>
+                            <input type="number" placeholder="Mobile Number" id="mobile_register">
+                            <small></small>
+                        </div>
+                        <div class="form_control">
+                            <label for="password_register">Password</label>
+                            <input type="password" id = "password_register" placeholder="Password">
+                            <small></small>
+                        </div>    
+                        <div class="button_container">
+                            <button type="submit" onclick="register_validate()" class="left_button">Register</button>  
+                            <button type="submit" onclick="window.location.href='http://127.0.0.1:5500/pages/login.html'" class="right_button">Login</button> 
+                        </div>
+                                         
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+  
+
+    <script src="/js/site_properties.js"></script>
+    <script src="/js/registration.js"></script>
+    <script src="/js/http_service2.js"></script>
+</body>
+</html>

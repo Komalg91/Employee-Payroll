@@ -4,43 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
     <link rel="stylesheet" href="/css/login.css">
 </head>
-<body>
+<body onload="check_Token()">
     <div class="container">
-        <div class="header_container">
-            <div class="header_content">
-                <img src="../assets/logo.png" alt="Logo">
-                <div class="brand_name">
-                    <span class="brand_text1">Employee</span>
-                    <span class="brand_text1 brand_text2">Payroll</span>
+        <div class="container_color">
+            <div class="main_container">
+                <div class="container_new">
+                    <div class="header_container1">
+                        <h1>Login Page</h1>
+                    </div>
+                    <div class="header_content1">
+                        <div class="form_control">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="phone" placeholder="Phone Number">
+                            <small id="phone_error"></small>
+                        </div>
+                    
+                        <div class="form_control">
+                            <label for="passwordd">Password</label>
+                            <input type="password" class="passwordd" placeholder="Password">
+                            <small id="pswd_error"></small>
+                        </div>    
+                        <div class="button_container">
+                            <button type="submit" onclick="validate()" class="left_button">Login</button>   
+                            <button type="submit" onclick="window.location.href = 'http://127.0.0.1:5500/pages/registration.html'" class="right_button">Register</button>                  
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="main_container">
-            
-                <div class="header_content1">
-                    <div class="left_contents">
-                        <span class="brand_text3">
-                            Employee Details
-                        </span>
-                    </div>
-                    <div class="right_contents">
-                        <button type="submit" class="search_btn"><i class="fa fa-search" aria-hidden="true"></i>
-                        </button>
-                        <a href="../pages/employee_payroll.html"><button type="submit" class="add_user_btn">+ Add User</button></a>
-                    </div>
-                </div>
-                
-                    <table id="table"></table> 
-                
-        </div>
-            
+        </div>    
     </div>
+
+    
+
     <script src="/js/login.js"></script>
+    <script src="/js/http_service2.js"></script>
+    <script src="/js/site_properties.js"></script>
 </body>
 </html>
